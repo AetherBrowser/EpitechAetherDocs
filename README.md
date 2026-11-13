@@ -1,41 +1,41 @@
 # Epitech Aether Docs
 
-Sources Markdown des livrables EIP Aether. Pandoc produit un PDF par fichier de `docs/`.
+Markdown sources for the Aether EIP deliverables. Pandoc produces one PDF per file in `docs/`.
 
-## Page de garde
+## Cover page
 
-Chaque document commence par :
+Each document starts with:
 
 ```yaml
 ---
 name: "AETHER"
-title: "Titre du document"
+title: "Document title"
 slogan: "Slogan"
 ---
 ```
 
-Couleurs et tailles (définies dans `template/header.tex`) :
+Colors and sizes (defined in `template/header.tex`):
 
-| Élément | Taille | Couleur |
+| Element | Size | Color |
 | --- | --- | --- |
-| Nom | 40 pt | `#1E2761` |
-| Titre du document | 20 pt | `#2C5F2D` |
-| Slogan | 13 pt italique | `#2C5F2D` |
-| Titre 1 (section) | Large | `#1E2761` |
-| Titre 2 et 3 | large / normalsize | `#2C5F2D` |
+| Name | 40 pt | `#1E2761` |
+| Document title | 20 pt | `#2C5F2D` |
+| Slogan | 13 pt italic | `#2C5F2D` |
+| Heading 1 (section) | Large | `#1E2761` |
+| Heading 2 and 3 | large / normalsize | `#2C5F2D` |
 
-`docs/_template.md` est ignoré à la compilation. Copiez-le pour un nouveau livrable.
+`docs/_template.md` is skipped at build time. Copy it to start a new deliverable.
 
-La police est Arial (`fonts/arial.ttf`, gras, italique, gras italique). XeLaTeX l'embarque dans chaque PDF. La dernière page lit `document-date` et `modify-date` dans l'en-tête YAML de chaque document.
+The typeface is Arial (`fonts/arial.ttf`, bold, italic, bold italic). XeLaTeX embeds it in every PDF. The last page reads `document-date` and `modify-date` from each document’s YAML header.
 
-## PDF en local
+## Local PDFs
 
 ```bash
 bash scripts/build-pdf.sh
 ```
 
-Nécessite `pandoc` et une distribution XeLaTeX (`texlive-xetex`). Les PDF sortent dans `dist/`.
+Requires `pandoc` and a XeLaTeX distribution (`texlive-xetex`). PDFs are written to `dist/`.
 
 ## CI
 
-`.github/workflows/pdf.yml` lance la même commande sur chaque push et publie l'artefact `aether-docs-pdf`.
+`.github/workflows/pdf.yml` runs the same command on every push and publishes the `aether-docs-pdf` artifact.
