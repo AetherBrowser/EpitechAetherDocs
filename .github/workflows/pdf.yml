@@ -1,0 +1,38 @@
+name: Build PDFs
+
+on:
+  push:
+    paths:
+      - "docs/**"
+      - "template/**"
+      - "scripts/build-pdf.sh"
+      - ".github/workflows/pdf.yml"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc and XeLaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            pandoc \
+            texlive-xetex \
+            texlive-fonts-recommended \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            lmodern
+
+      - name: Convert Markdown to PDF
+        run: bash scripts/build-pdf.sh
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aether-docs-pdf
+          path: dist/*.pdf
+          if-no-files-found: error

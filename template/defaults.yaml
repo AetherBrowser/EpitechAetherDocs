@@ -1,0 +1,13 @@
+from: markdown
+to: pdf
+pdf-engine: xelatex
+template: template/aether.latex
+variables:
+  documentclass: article
+  classoption:
+    - titlepage
+    - 11pt
+  geometry: margin=2.4cm
+  linestretch: 1.15
+include-in-header:
+  - template/header.tex
