@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Technical & Functional Specifications"
 slogan: "High-performance memory-safe web browser"
 document-date: "Mars 01, 2026"
-modify-date: "February 11, 2026"
+modify-date: "November 13, 2026"
 ---
 
 # PART 1: SYSTEM ARCHITECTURE
@@ -294,4 +294,3 @@ Aether uses multi-process architecture for security and stability:
 
 - Base Size: 14px (scalable via accessibility settings)
 
-*Document Date: February 11, 2026*

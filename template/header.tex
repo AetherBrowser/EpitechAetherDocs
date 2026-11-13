@@ -1,5 +1,6 @@
 \usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{titletoc}
 
 \definecolor{aetherblue}{HTML}{1E2761}
 \definecolor{aethergreen}{HTML}{2C5F2D}
@@ -17,3 +18,22 @@
 \titlespacing*{\section}{0pt}{1.6em}{0.55em}
 \titlespacing*{\subsection}{0pt}{1.15em}{0.35em}
 \titlespacing*{\subsubsection}{0pt}{0.9em}{0.3em}
+
+\titlecontents{section}
+  [0pt]
+  {\addvspace{0.55em}\color{aetherblue}\bfseries}
+  {\contentslabel{1.6em}}
+  {}
+  {\hfill\contentspage}
+\titlecontents{subsection}
+  [1.4em]
+  {\addvspace{0.22em}\color{aethergreen}}
+  {\contentslabel{2em}}
+  {}
+  {\hfill\contentspage}
+\titlecontents{subsubsection}
+  [2.8em]
+  {\addvspace{0.12em}\color{aethergreen}\small}
+  {\contentslabel{2.6em}}
+  {}
+  {\hfill\contentspage}

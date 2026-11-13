@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Technology Monitoring & Hard Problem"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 16, 2026"
-modify-date: "November 12, 2026"
+modify-date: "November 13, 2026"
 ---
 
 # **Introduction**
@@ -128,12 +128,6 @@ First pass, to be deepened with dated sources before end of December 2026 (see c
   uBlock Origin-style approach (algorithmic reference, JS)   Very high performing in its own ecosystem         Very mature                   Not directly reusable (JS), serves as a design reference   GPL-3.0
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# 
-
-# 
-
-# 
-
 # **Part 4: Experimentation --- 2 prototypes**
 
 ## **4.1 Decision prototype (due end of January 2027)**
@@ -170,5 +164,3 @@ From November 2026 to May 2027 --- at least 2 active communities, 5 public contr
 
 - Proposed target communities: r/rust, a Rust Discord server (French-speaking or international), the Servo forum/tracker.
 
-*Document Date: September 16, 2026*\
-*Modify Date: September 16, 2026*

@@ -2,6 +2,8 @@ from: markdown
 to: pdf
 pdf-engine: xelatex
 template: template/aether.latex
+toc: true
+toc-depth: 3
 variables:
   documentclass: article
   classoption:
@@ -9,5 +11,10 @@ variables:
     - 11pt
   geometry: margin=2.4cm
   linestretch: 1.15
+  toc-title: Contents
+  toccolor: aetherblue
+  colorlinks: true
+  linkcolor: aetherblue
+  urlcolor: aetherblue
 include-in-header:
   - template/header.tex

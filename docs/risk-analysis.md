@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Impacts & Mitigation"
 slogan: "High-Performance Memory-Safe Web Browser"
 document-date: "February 10, 2026"
-modify-date: "September 15, 2026"
+modify-date: "November 13, 2026"
 ---
 
 # Executive Summary

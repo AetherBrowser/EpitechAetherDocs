@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Architecture & Reliability"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 16, 2026"
-modify-date: "September 16, 2026"
+modify-date: "November 13, 2026"
 ---
 
 # **Introduction**
@@ -41,22 +41,6 @@ Status: initial draft. The diagram and data model correspond to the deliverable 
 
   App storage            IndexDB                                                     Storage for web app
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
-
-## 
 
 ## **1.2 Component architecture**
 
@@ -118,8 +102,6 @@ Schema carried over from the initial Technical & Functional Specifications (§2.
   settings      key, value, updated_at                    User preferences
   --------------------------------------------------------------------------------------------
 
-# 
-
 # **Part 2: Architecture Decision Record (ADR)**
 
 Format used for every entry: date, context, options considered, decision, reason, consequences accepted. ADRs live on the GitHub wiki and feed this document at every structuring decision (4 minimum required, including at least one revised during the year).
@@ -163,10 +145,6 @@ Format used for every entry: date, context, options considered, decision, reason
 - Decision: egui for desktop.
 
 - Consequences: a smaller UI ecosystem than mainstream toolkits, but no external UI dependency and simpler builds.
-
-# 
-
-# 
 
 # **Part 3: Technical documentation**
 
@@ -234,5 +212,3 @@ Proposed critical path (the flow whose failure makes the product unusable): URL 
 
 - Configuration kept out of the code: environment variables, no secrets in the repository.
 
-*Document Date: September 16, 2026*\
-*Modify Date: September 16, 2026*

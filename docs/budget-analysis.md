@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Budget Analysis & Financial Planning"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 15, 2026"
-modify-date: "October 10, 2026"
+modify-date: "November 13, 2026"
 ---
 
 # Executive Summary
@@ -13,8 +13,6 @@ Aether is an open-source, high-performance web browser built on Rust, Servo rend
 **Key Competitive Advantages:**
 
 - Memory efficiency: 240-245 MiB startup (vs. Firefox 475-605 MiB, Chrome 1.2-1.5 GiB)
-
-<!-- -->
 
 - Fast startup: 0.90s CPU time (vs. Firefox 3.27s, Chrome 1.15s)
 
@@ -290,4 +288,3 @@ As the project scales from alpha to mass adoption, infrastructure costs will gro
 
 **Project Team:** Corentin BERGAENTZLE, Thomas RICHALET, Axel BATTIGELLI, Matteo MILIN, Nathan CALLEGARI
 
-*Document Date: February 10, 2026*

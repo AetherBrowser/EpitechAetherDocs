@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Technical & Architecture"
 slogan: "High-performance memory-safe web browser"
 document-date: "February 10, 2026"
-modify-date: "February 11, 2026"
+modify-date: "November 13, 2026"
 ---
 
 ## PART 1: COMPETITIVE CONTEXT
@@ -19,8 +19,6 @@ Defined criteria across Business & Technical axes for browser comparison:
 **Business Criteria:**
 
 - Market Share & Adoption Rate
-
-<!-- -->
 
 - Community Engagement & Open-Source Contribution
 
@@ -62,11 +60,7 @@ Defined criteria across Business & Technical axes for browser comparison:
 
 ## PART 2: TECHNICAL & LEGAL AUDIT
 
-### 2.1 Technical State of the Art
-
-### 
-
-### 2.2 Security & Legal Audit
+### 2.1 Security & Legal Audit
 
 **GDPR/RGPD Compliance**
 
@@ -114,9 +108,7 @@ Defined criteria across Business & Technical axes for browser comparison:
   Security Misconfiguration   Yes/No            Security headers, hardened configs
   --------------------------- ----------------- ---------------------------------------
 
-### 
-
-### 2.3 Accessibility Strategy (A11y)
+### 2.2 Accessibility Strategy (A11y)
 
 **Standards & Targets:** WCAG 2.1 (International) / RGAA 4.1 (France) - Target Level: AA
 
@@ -142,7 +134,7 @@ Defined criteria across Business & Technical axes for browser comparison:
 
 - [ ] Consistent navigation
 
-### 2.4 Team Skills Audit
+### 2.3 Team Skills Audit
 
   ------------------------------ ---------------- ------------------- --------------------- --------------------- --------------------- -----------------------
   **Required Skill**             **Importance**   **Level of Axel**   **Level of Matteo**   **Level of Nathan**   **Level of Thomas**   **Level of Corentin**
@@ -196,4 +188,3 @@ Defined criteria across Business & Technical axes for browser comparison:
 
 - Stack Share: https://stackshare.io/ (Tech stack comparisons)
 
-*Document Date: February 10, 2026*

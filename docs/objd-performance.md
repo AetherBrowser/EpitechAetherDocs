@@ -3,24 +3,24 @@ name: "AETHER"
 title: "Measure, Test & Optimize (Objective D)"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 16, 2026"
-modify-date: "November 12, 2026"
+modify-date: "November 13, 2026"
 ---
 
-**Introduction**
+# **Introduction**
 
 This document covers complementary objective D of the Technical Track (Tech4): measuring, testing and optimizing Aether\'s technical performance. It builds the indicators already outlined in the Action Plan (§3.3) and on the baseline already measured, found in the Budget/Risk Analysis. Written to be reviewed with the mentor.
 
 Status: initial draft, covering the deliverable due end of December 2026 (axis and indicators chosen, quantified target). The full protocol, diagnosis, and optimization loops will be completed at the deadlines in the calendar (January to May 2027).
 
-**Part 1: Priority axis**
+# **Part 1: Priority axis**
 
-**1.1 Axis chosen: memory consumption (RAM)**
+## **1.1 Axis chosen: memory consumption (RAM)**
 
 Memory is selected as the priority axis for Objective D. It is already Aether\'s main differentiation argument against Chrome and Firefox (cf. Budget Analysis), and it is the axis most directly tied to the product promise of "running well on modest hardware" highlighted in the Action Plan and Context Audit.
 
 Why this axis matters specifically for Aether: one of the three problems identified in the Action Plan (§1.1) is the excessive memory/CPU footprint of current browsers on modest machines. Leaving this axis untreated would mean not addressing the project\'s founding problem.
 
-**1.2 Measurable indicators**
+## **1.2 Measurable indicators**
 
   ----------------------------------------------------------------------------------------------------------------------------------
   **Indicator**                 **Formula / definition**                                              **Measurement tool**
@@ -32,11 +32,11 @@ Why this axis matters specifically for Aether: one of the three problems identif
   Peak memory during browsing   Maximum value observed over a typical browsing session (10 pages)     heaptrack
   ----------------------------------------------------------------------------------------------------------------------------------
 
-**1.3 Quantified target**
+## **1.3 Quantified target**
 
 Target already set in the Action Plan (§3.3), reused here as the official target for Objective D: **memory footprint at least 30% lower than Firefox\'s**, on a standard browsing scenario with 5 open tabs.
 
-**Part 2: Measurement protocol**
+# **Part 2: Measurement protocol**
 
   -------------------------------------------------------------------------------------------------------------------------------------------------
   **Parameter**                       **Definition adopted**
@@ -52,7 +52,7 @@ Target already set in the Action Plan (§3.3), reused here as the official targe
   Measurement timing                  Cold (right after load) and warm (after 60s of idle)
   -------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Part 3: Baseline measurement**
+# **Part 3: Baseline measurement**
 
 An initial baseline has already been measured (cf. Budget Analysis / Risk Analysis):
 
@@ -64,13 +64,13 @@ An initial baseline has already been measured (cf. Budget Analysis / Risk Analys
   CPU time at startup     0.90 s          3.27 s          1.15 s
   -----------------------------------------------------------------------
 
-**Part 4: Diagnosis**
+# **Part 4: Diagnosis**
 
 To carry out once the 5-tab baseline is confirmed (due end of February 2027): identify the bottleneck using tooling (memory profile, redundant allocations, potential leak) rather than intuition, state an explanatory hypothesis, and estimate the expected gain if the hypothesis is correct.
 
-**Part 5: Optimization loops**
+# **Part 5: Optimization loops**
 
-**5.1 Loop 1 (due end of March 2027)**
+## **5.1 Loop 1 (due end of March 2027)**
 
 - One precise, isolated change (e.g. a lighter data structure, a revised cache, reduced allocations).
 
@@ -80,13 +80,11 @@ To carry out once the 5-tab baseline is confirmed (due end of February 2027): id
 
 - Non-regression check: existing tests still pass; other memory-axis indicators are not degraded.
 
-**5.2 Loop 2 (due end of May 2027)**
+## **5.2 Loop 2 (due end of May 2027)**
 
 - Same approach: one isolated change, re-measurement, gap, trade-off, non-regression.
 
-**Part 6: Tracking over time**
+# **Part 6: Tracking over time**
 
 History of measured values to maintain (simple table or chart), updated at every measurement, to tell a real gain from measurement noise between passes.
 
-*Document Date: September 16, 2026*\
-*Modify Date: October 19, 2026*

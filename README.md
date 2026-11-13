@@ -24,7 +24,9 @@ Colors and sizes (defined in `template/header.tex`):
 | Heading 1 (section) | Large | `#1E2761` |
 | Heading 2 and 3 | large / normalsize | `#2C5F2D` |
 
-`docs/_template.md` is skipped at build time. Copy it to start a new deliverable.
+The second page is a table of contents built from headings 1 to 3. Body text starts on the following page.
+
+`template/_template.md` is the starting point for a new deliverable. Files named `_*.md` in `docs/` are skipped at build time.
 
 The typeface is Arial (`fonts/arial.ttf`, bold, italic, bold italic). XeLaTeX embeds it in every PDF. The last page reads `document-date` and `modify-date` from each document’s YAML header.
 

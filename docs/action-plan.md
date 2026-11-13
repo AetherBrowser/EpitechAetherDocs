@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Action Plan EIP"
 slogan: "High-performance web browser in Rust"
 document-date: "September 15, 2026"
-modify-date: "September 22, 2026"
+modify-date: "November 13, 2026"
 ---
 
 # **Part 1 --- Contexte**
@@ -151,7 +151,7 @@ Aether suit une architecture modulaire en crates Rust indépendantes, permettant
 +===============+=====================+=============================================================+=====================================================+
 | **M1**        | Sept. -- Oct. 2025  | - POC : rendu d\'une page HTML simple via Servo             | - Affichage de wikipedia.org sans crash             |
 |               |                     |                                                             |                                                     |
-|               |                     | - UI de base avec egui (barre d\'adresse, onglet unique)    | <!-- -->                                            |
+|               |                     | - UI de base avec egui (barre d\'adresse, onglet unique)    |                                                     |
 |               |                     |                                                             |                                                     |
 |               |                     | - Chargement HTTP/HTTPS fonctionnel                         | - Compilation stable sur Linux                      |
 |               |                     |                                                             |                                                     |
@@ -206,8 +206,6 @@ Cette partie présente les intentions sur les objectifs non-techniques du Techni
 
 - Mettre en place une veille hebdomadaire sur les sources suivantes :
 
-<!-- -->
-
 - This Week in Rust (newsletter hebdomadaire)
 
 - Blog officiel Servo (servo.org/blog)
@@ -217,8 +215,6 @@ Cette partie présente les intentions sur les objectifs non-techniques du Techni
 - Reddit r/rust, r/programming, forums internals.rust-lang.org
 
 - Arxiv/Semantic Scholar pour les publications sur les moteurs de rendu
-
-<!-- -->
 
 - Rédiger des notes comparatives sur les alternatives évaluées (ex : Tauri vs egui, WebKit vs Servo)
 

@@ -3,16 +3,16 @@ name: "AETHER"
 title: "Open Source (Objective A)"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 29, 2026"
-modify-date: "November 12, 2026"
+modify-date: "November 13, 2026"
 ---
 
 # **Introduction**
 
 This document covers Complementary Objective A of the Technical Track (Tech4): Opening the Aether project to external contributions. It defines the strategy, governance guidelines, tools, and community engagement timeline for making the Aether browser accessible and usable by external developers. In accordance with the Student Guide, this objective complements the existing community contribution mechanisms of Objective 1, focusing on creating an open and sustainable ecosystem around the official Aether repository. Status: Initial version. The licensing strategy, onboarding documentation, and issue breakdown are established for completion by the end of October 2026. Calls for contributions and proposal processing will continue until May 2027 at least.
 
-**Part 1: Legal framework and preparation for the opening**
+# **Part 1: Legal framework and preparation for the opening**
 
-**1.1 Choice and justification of the license (LICENSE)**
+## **1.1 Choice and justification of the license (LICENSE)**
 
 The choice of software license governs the rights granted to contributors and reusers of Aether\'s code.
 
@@ -80,7 +80,7 @@ Three major files are maintained in the repository root:
 
 3.  CODE_OF_CONDUCT.md: Rules of conduct within the Aether community.
 
-**Part 2: Breakdown and structuring of the initial issues**
+# **Part 2: Breakdown and structuring of the initial issues**
 
 ## **2.1 Idk**
 
@@ -90,7 +90,7 @@ TODO!
 
 TODO!
 
-**Part 3: Sourcing and calls for contribution\'s campaigns**
+# **Part 3: Sourcing and calls for contribution\'s campaigns**
 
 ## **3.1 Targeted channels and communities**
 
@@ -100,7 +100,7 @@ TODO!
 
 TODO!
 
-**Part 4: Management, review and processing of contributions**
+# **Part 4: Management, review and processing of contributions**
 
 ## **4.1 Monitoring procedure and SLA**
 
@@ -132,7 +132,5 @@ Contributors who have submitted accepted code or documentation are publicly cred
 
 - Explicit mention in the release notes.
 
-**Part 5: Schedule and deliverables (Planning)**
+# **Part 5: Schedule and deliverables (Planning)**
 
-*Document Date: September 16, 2026*\
-*Modify Date: November 12, 2026*
