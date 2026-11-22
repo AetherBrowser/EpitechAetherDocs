@@ -51,13 +51,60 @@ jobs:
         run: |
           mkdir -p site/objectives
           shopt -s nullglob
+          objectives=""
+          others=""
+          html_escape() {
+            sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g'
+          }
           for pdf in dist/*.pdf; do
             base="$(basename "$pdf")"
+            stem="${base%.pdf}"
+            title="$(awk '
+              /^---$/ { n++; next }
+              n == 1 && /^title:/ {
+                sub(/^title:[[:space:]]*/, "")
+                gsub(/^"|"$/, "")
+                print
+                exit
+              }
+              n >= 2 { exit }
+            ' "docs/${stem}.md")"
+            [ -n "$title" ] || title="$stem"
+            title="$(printf '%s' "$title" | html_escape)"
             case "$base" in
-              obj*.pdf) cp "$pdf" "site/objectives/$base" ;;
-              *) cp "$pdf" "site/$base" ;;
+              obj*.pdf)
+                cp "$pdf" "site/objectives/$base"
+                objectives="${objectives}<li><a href=\"objectives/${base}\">${title}</a></li>"
+                ;;
+              *)
+                cp "$pdf" "site/$base"
+                others="${others}<li><a href=\"${base}\">${title}</a></li>"
+                ;;
             esac
           done
+          cat > site/index.html <<EOF
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Aether documents</title>
+            <style>
+              body { font-family: Arial, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; color: #1E2761; }
+              h1 { font-size: 1.6rem; }
+              h2 { font-size: 1.1rem; color: #2C5F2D; }
+              a { color: #1E2761; }
+            </style>
+          </head>
+          <body>
+            <h1>Aether documents</h1>
+            <h2>Objectives</h2>
+            <ul>${objectives}</ul>
+            <h2>Other documents</h2>
+            <ul>${others}</ul>
+          </body>
+          </html>
+          EOF
 
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

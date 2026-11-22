@@ -40,4 +40,4 @@ Requires `pandoc` and a XeLaTeX distribution (`texlive-xetex`). PDFs are written
 
 ## CI
 
-`.github/workflows/pdf.yml` runs the same command on every push and publishes the `aether-docs-pdf` artifact. On `main`, it also deploys the PDFs to GitHub Pages: files named `obj*.pdf` go in `objectives/`, the others stay at the site root. Pages must use the GitHub Actions source.
+`.github/workflows/pdf.yml` runs the same command on every push and publishes the `aether-docs-pdf` artifact. On `main`, it also deploys the PDFs to GitHub Pages. `index.html` lists every document. Files named `obj*.pdf` go in `objectives/`, the others stay at the site root. Pages must use the GitHub Actions source.
