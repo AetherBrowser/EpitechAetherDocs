@@ -80,6 +80,12 @@ Three major files are maintained in the repository root:
 
 3.  CODE_OF_CONDUCT.md: Rules of conduct within the Aether community.
 
+## **1.4 Public repository and fallback mirror**
+
+The official repository stays on GitHub. Issues, pull requests, Discussions, the GitHub Project, and releases are handled only there.
+
+A read-only mirror on GitLab is the fallback if GitHub is unavailable. It is updated from the default branch of the official repository. It is not a second place to contribute: merge requests opened on the mirror are not reviewed. The README names both addresses and states that GitHub is the place to contribute.
+
 # **Part 2: Breakdown and structuring of the initial issues**
 
 ## **2.1 Idk**
@@ -178,7 +184,7 @@ Dates inside the contribution window of this objective:
 
 | Release | Date | What is expected |
 | --- | --- | --- |
-| Opening | End of October 2026 | MPL 2.0 in the repository, README, CONTRIBUTING, CODE_OF_CONDUCT, Discussions enabled, GitHub Project created with the first open-perimeter issues |
+| Opening | End of October 2026 | MPL 2.0 in the repository, README, CONTRIBUTING, CODE_OF_CONDUCT, Discussions enabled, GitHub Project created with the first open-perimeter issues, GitLab read-only mirror in place |
 | v0.2 | December 2026 | First tagged release on the two-month cadence, announcement post, contributor table generated from the default branch |
 | v0.4 | February 2027 | Second release, open issues triaged on the Project, external accessibility test from section 4.2 logged if not already done |
 | v0.6 | April 2027 | Third release, contributor table and release notes up to date |
