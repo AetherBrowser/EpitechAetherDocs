@@ -1,9 +1,9 @@
 ---
 name: "AETHER"
-title: "Action Plan EIP"
+title: "Action Plan"
 slogan: "High-performance web browser in Rust"
 document-date: "September 15, 2026"
-modify-date: "November 13, 2026"
+modify-date: "November 24, 2026"
 ---
 
 # **Part 1 --- Contexte**

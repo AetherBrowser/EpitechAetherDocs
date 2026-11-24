@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Open Source (Objective A)"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 29, 2026"
-modify-date: "November 13, 2026"
+modify-date: "November 24, 2026"
 ---
 
 # **Introduction**
