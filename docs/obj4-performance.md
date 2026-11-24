@@ -1,6 +1,6 @@
 ---
 name: "AETHER"
-title: "Measure, Test & Optimize (Objective D)"
+title: "Measure, Test & Optimize"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 16, 2026"
 modify-date: "November 24, 2026"
@@ -8,7 +8,7 @@ modify-date: "November 24, 2026"
 
 # **Introduction**
 
-This document covers complementary objective D of the Technical Track (Tech4): measuring, testing and optimizing Aether\'s technical performance. It builds the indicators already outlined in the Action Plan (§3.3) and on the baseline already measured, found in the Budget/Risk Analysis. Written to be reviewed with the mentor.
+This document covers complementary objective D of the Technical Track (Tech4): measuring, testing and optimizing Aether\'s technical performance. It builds the indicators already outlined in the Action Plan, from section 3.3, and on the baseline already measured, found in the Budget/Risk Analysis. Written to be reviewed with the mentor.
 
 Status: initial draft, covering the deliverable due end of December 2026 (axis and indicators chosen, quantified target). The full protocol, diagnosis, and optimization loops will be completed at the deadlines in the calendar (January to May 2027).
 
@@ -18,7 +18,7 @@ Status: initial draft, covering the deliverable due end of December 2026 (axis a
 
 Memory is selected as the priority axis for Objective D. It is already Aether\'s main differentiation argument against Chrome and Firefox (cf. Budget Analysis), and it is the axis most directly tied to the product promise of "running well on modest hardware" highlighted in the Action Plan and Context Audit.
 
-Why this axis matters specifically for Aether: one of the three problems identified in the Action Plan (§1.1) is the excessive memory/CPU footprint of current browsers on modest machines. Leaving this axis untreated would mean not addressing the project\'s founding problem.
+Why this axis matters specifically for Aether: one of the three problems identified in the Action Plan, from section 1.1, is the excessive memory/CPU footprint of current browsers on modest machines. Leaving this axis untreated would mean not addressing the project\'s founding problem.
 
 ## **1.2 Measurable indicators**
 
@@ -34,7 +34,13 @@ Why this axis matters specifically for Aether: one of the three problems identif
 
 ## **1.3 Quantified target**
 
-Target already set in the Action Plan (§3.3), reused here as the official target for Objective D: **memory footprint at least 30% lower than Firefox\'s**, on a standard browsing scenario with 5 open tabs.
+Target already set in the Action Plan, from section 3.3, reused here as the official target for Objective D: **memory footprint at least 30% lower than Firefox\'s**, on a standard browsing scenario with 5 open tabs.
+
+## **1.4 Engine conformance: Web Platform Tests**
+
+The indicators above measure the product (RAM on a browsing scenario). The rendering engine itself is checked against the **Web Platform Tests (WPT)**, the shared test suite maintained by the web-platform-tests project and run by every major engine (Chromium/Blink, Firefox/Gecko, WebKit, and Servo).
+
+WPT is the industry standard for “does the engine implement the web platform correctly”: HTML, CSS, DOM, and related specs, one test file per specified behavior. Passing a WPT test means the same result a conformant browser is expected to produce. It is a conformance standard, separate from the memory target from section 1.3. Aether already runs it in CI (`cargo test` plus WPT, split into blocks; see Architecture and Risk Analysis).
 
 # **Part 2: Measurement protocol**
 

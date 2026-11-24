@@ -3,7 +3,7 @@ name: "AETHER"
 title: "Technology Monitoring & Hard Problem"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 16, 2026"
-modify-date: "November 13, 2026"
+modify-date: "November 24, 2026"
 ---
 
 # **Introduction**
@@ -16,7 +16,7 @@ Status: initial draft, covering the deliverables due end of October 2026 (hard p
 
 ## **1.1 Problem statement**
 
-Aether natively embeds an ad and tracker blocking engine (the **components/net/adblock** module), already highlighted as a core product differentiator (Budget Analysis, Context Audit, Action Plan §2.1). Today this engine is not yet built: the team does not yet know how to filter a network request against an EasyList-format rule set (tens of thousands of rules) without adding perceptible latency to page loading.
+Aether natively embeds an ad and tracker blocking engine (the **components/net/adblock** module), already highlighted as a core product differentiator in the Budget Analysis, the Context Audit, and the Action Plan from section 2.1. Today this engine is not yet built: the team does not yet know how to filter a network request against an EasyList-format rule set (tens of thousands of rules) without adding perceptible latency to page loading.
 
 ## **1.2 What makes it hard**
 
@@ -60,7 +60,7 @@ Proposed targets, consistent with the ones already set in the Action Plan (miles
   internals.rust-lang.org                Specialized forum       In-depth discussions on the evolution of the language and ecosystem
   ------------------------------------------------------------------------------------------------------------------------------------
 
-List carried over from the Action Plan (§3.1), the team\'s mandatory monitoring section. To extend with sources specific to the hard problem as the state of the art develops (e.g. the adblock-rust repository, content-filtering forums).
+List carried over from the Action Plan, from section 3.1, the team\'s mandatory monitoring section. To extend with sources specific to the hard problem as the state of the art develops (e.g. the adblock-rust repository, content-filtering forums).
 
 ## **2.2 Tools and automation**
 
@@ -162,5 +162,5 @@ First pass, to be deepened with dated sources before end of December 2026 (see c
 
 From November 2026 to May 2027 --- at least 2 active communities, 5 public contributions, 1 accepted external contribution.
 
-- Proposed target communities: r/rust, a Rust Discord server (French-speaking or international), the Servo forum/tracker.
+- Proposed target communities: r/rust, a Rust Discord server (international), the Servo forum/tracker.
 

@@ -3,12 +3,12 @@ name: "AETHER"
 title: "Architecture & Reliability"
 slogan: "High-performance memory-safe web browser"
 document-date: "September 16, 2026"
-modify-date: "November 13, 2026"
+modify-date: "November 24, 2026"
 ---
 
 # **Introduction**
 
-This document covers mandatory objective #2 of the Technical Track (Tech4): structuring, documenting and making Aether\'s technical architecture reliable. It reflects the current, confirmed architecture, Rust, pure Servo, egui, as defined in the Action Plan (§2.1, §2.2), and is written to be reviewed with the mentor (Jean-Philippe Roze).
+This document covers mandatory objective #2 of the Technical Track (Tech4): structuring, documenting and making Aether\'s technical architecture reliable. It reflects the current, confirmed architecture, Rust, pure Servo, egui, as defined in the Action Plan, from sections 2.1 and 2.2, and is written to be reviewed with the mentor (Jean-Philippe Roze).
 
 Status: initial draft. The diagram and data model correspond to the deliverable due end of November 2026; the pipeline, tests, code review and reproducibility sections are outlined and will be completed at the deadlines in the calendar.
 
@@ -88,7 +88,7 @@ Aether builds on Servo\'s internal structure, organized as a network of independ
 
 ## **1.4 Data model (local SQLite storage)**
 
-Schema carried over from the initial Technical & Functional Specifications (§2.1), it is independent from the rendering engine choice, so it remains valid, but has not yet been formally re-confirmed in the current Action Plan.
+Schema carried over from the initial Technical & Functional Specifications, from section 2.1, it is independent from the rendering engine choice, so it remains valid, but has not yet been formally re-confirmed in the current Action Plan.
 
   --------------------------------------------------------------------------------------------
   **Table**     **Main columns**                          **Purpose**
