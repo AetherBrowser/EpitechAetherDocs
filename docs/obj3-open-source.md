@@ -88,23 +88,71 @@ A read-only mirror on GitLab is the fallback if GitHub is unavailable. It is upd
 
 # **Part 2: Breakdown and structuring of the initial issues**
 
-## **2.1 Idk**
+## **2.1 How an issue is cut**
 
-TODO!
+Every issue opened for an external contributor stays inside the open perimeter from section 1.2. Core work is not filed as a public task.
 
-## **2.2 Idk**
+An issue is ready for the board when its body contains:
 
-TODO!
+- the area (`aether/ports`, `components/net/adblock`, `tests/wpt`, or documentation);
+- the expected result, in one sentence;
+- acceptance criteria a reviewer can check without asking the author;
+- what is out of scope for that issue.
 
-# **Part 3: Sourcing and calls for contribution\'s campaigns**
+Labels used on the GitHub Project:
+
+- `good first issue`: one file or one doc page, no engine knowledge required;
+- `help wanted`: open perimeter, needs a build and a test run;
+- `documentation`: README, CONTRIBUTING, or guides only.
+
+An issue without acceptance criteria stays in Backlog. It moves to Ready only after a maintainer has checked the criteria.
+
+## **2.2 First batch, opened with the repository**
+
+These issues are the first cards in Ready at the October 2026 opening. Each one maps to a line of the open perimeter.
+
+| Issue | Area | Label | Acceptance criteria |
+| --- | --- | --- | --- |
+| Document `mach build` and `mach test` for Linux | documentation | `good first issue` | README lists dependencies, the two commands, and one known failure with its fix |
+| Add a keyboard shortcut for a new tab and for closing the current tab | `aether/ports` | `good first issue` | Both shortcuts work on Linux, and the keys are named in the UI or the README |
+| Add one theme token (light or dark) for the address bar and the tab strip | `aether/ports` | `help wanted` | The theme applies to both widgets, and the default theme is unchanged |
+| Parse one EasyList exception rule and cover it with a unit test | `components/net/adblock` | `help wanted` | The test fails before the change and passes after, on a rule quoted in the issue |
+| Import one Web Platform Test file that Aether already fails, and record the result | `tests/wpt` | `help wanted` | The test is in the repository, the CI run shows the failure, and the issue states the expected pass |
+
+A maintainer files these five before the first call for contributions. Later issues follow the same shape. A proposal that does not fit the table goes through Discussions (Ideas) before it becomes an issue.
+
+# **Part 3: Sourcing and calls for contribution campaigns**
 
 ## **3.1 Targeted channels and communities**
 
-TODO!
+Calls point at one Ready issue, not at the repository in general. The same post is not copied to every channel on the same day.
 
-## **3.2 Outreach Register**
+| Channel | Why it is used | What is posted |
+| --- | --- | --- |
+| Reddit r/rust | Rust developers who can build the project | One `help wanted` issue, with the build command and the acceptance criteria |
+| Rust Discord (international) | Same audience, faster replies than a forum thread | The same issue, in the showcase or contribution channel the server allows |
+| Servo forum / Servo issue tracker | People already working on the engine Aether builds on | WPT or documentation issues only. No request to change Servo itself |
+| Epitech student channels | Nearby contributors who can run the external accessibility test from section 4.2 | The `good first issue` documentation task |
 
-TODO!
+Objective 1 already follows r/rust, the Rust Discord server, and the Servo forum for technology monitoring. Posts for this objective use those same places and stay distinct from monitoring notes: a call asks for a pull request on a named issue.
+
+## **3.2 Outreach register**
+
+Each call is one row, written the day it is sent. The register lives in the repository wiki and is copied into the mentoring notes.
+
+| Date | Channel | Issue | Link | Result |
+| --- | --- | --- | --- | --- |
+| *(date of the post)* | r/rust | Document `mach build` and `mach test` for Linux | *(URL of the post)* | No reply yet / reply / pull request opened |
+
+Columns:
+
+- **Date**: day the message is published.
+- **Channel**: one row of the table in section 3.1.
+- **Issue**: title of the Ready issue the message links to.
+- **Link**: URL of the post. A call without a public URL is not counted.
+- **Result**: updated when a reply or a pull request appears, or closed as "no reply" after 14 days.
+
+Target inside the graded window (November 2026 to May 2027): at least four calls, on at least two channels, and at least one pull request from outside the team merged on the default branch. A call that only links the repository, without an issue, does not count.
 
 # **Part 4: Management, review and processing of contributions**
 
